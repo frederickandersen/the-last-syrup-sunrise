@@ -1,5 +1,5 @@
-import React, { Suspense, useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
 import CharacterDetails from './CharacterDetails';
 import Carousel from './Carousel';
@@ -19,8 +19,6 @@ const GameScreen: React.FC = () => {
     selectedCharacter,
     socialMissions,
     powerCards,
-    currentBar,
-    completedMissions,
     completeSocialMission,
     usePowerCard,
     advanceToNextBar,

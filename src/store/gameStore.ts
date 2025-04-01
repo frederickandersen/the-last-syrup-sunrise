@@ -1,7 +1,8 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { CHARACTERS, SOCIAL_MISSIONS, POWER_CARDS } from '@/types/game';
-import { Character, SocialMission, PowerCard, GameState } from '@/types/game';
+import { GameState } from '@/types/game';
+import { Character, SocialMission, PowerCard } from '@/types/game';
 
 interface GameStore extends GameState {
   selectCharacter: (characterId: string) => void;

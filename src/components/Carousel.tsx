@@ -40,7 +40,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, titleColor, rightElem
     setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
   };
 
-  const handleDragEnd = (event: any, info: any) => {
+  const handleDragEnd = (_event: any, info: any) => {
     const threshold = 50;
     if (Math.abs(info.offset.x) > threshold) {
       if (info.offset.x > 0) {
@@ -67,13 +67,6 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, titleColor, rightElem
       x: direction === 'left' ? '-100%' : '100%',
       opacity: 0
     })
-  };
-
-  const getNextIndex = (current: number, direction: 'left' | 'right') => {
-    if (direction === 'left') {
-      return (current + 1) % items.length;
-    }
-    return (current - 1 + items.length) % items.length;
   };
 
   return (
