@@ -5,15 +5,6 @@ import CharacterDetails from './CharacterDetails';
 import Carousel from './Carousel';
 import DrinkPassCounter from './DrinkPassCounter';
 
-// Loading skeleton component
-const LoadingSkeleton = () => (
-  <div className="animate-pulse">
-    <div className="h-48 bg-disco-dark-card/30 rounded-lg mb-4" />
-    <div className="h-4 bg-disco-dark-card/30 rounded w-3/4 mb-2" />
-    <div className="h-4 bg-disco-dark-card/30 rounded w-1/2" />
-  </div>
-);
-
 const GameScreen: React.FC = () => {
   const {
     selectedCharacter,
